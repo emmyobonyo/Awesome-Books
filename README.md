@@ -1,10 +1,10 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Awesome Books
 
-> One paragraph statement about the project.
+> A Simple Program Designed to Orgamise all our Literature.
 
-![screenshot](./app_screenshot.png)
+![screenshot](./awesome-books)
 
 Additional description about the project and its features.
 
