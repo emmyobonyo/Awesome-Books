@@ -1,65 +1,53 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Awesome Books
 
-> One paragraph statement about the project.
+> A Simple Program Designed to Orgamise all our Literature.
 
-![screenshot](./app_screenshot.png)
+![screenshot](./awesome-books.png)
 
-Additional description about the project and its features.
+- A User can Add a book using a form.
+- Get tired of a book, you can as well remove all togsther from the list.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML, CSS and Javascript
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://emmyobonyo.github.io/Awesome-Books/)
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-
-### Setup
+- A Computer, I guess and internet connection.
 
 ### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+- Navigate to a directory on your computer where you'd like to store the project and type ```git clone https://github.com/emmyobonyo/Awesome-Books.git```
+- Look for the ```index.html``` file and open it in your favourite browser.
+- Start storing your Awesome Books away.
+- You're Welcome
 
 ## Authors
 
-👤 **Author1**
+👤 **Yahya EL Ganayni**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/yahyaelganyni1 )
+- Twitter: [@twitterhandle](https://twitter.com/@crazy20046)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/yahya-el-ganayni-a456115b/)
 
 👤 **Author2**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/emmyobonyo)
+- Twitter: [@twitterhandle](https://twitter.com/emmyobonyo)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/emmanuel-obonyo-3728a2200/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
 
 ## Show your support
 
@@ -67,10 +55,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Thanks to [Microverse](https://microverse.org/) for providing the linters
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+This project is MIT licensed.
