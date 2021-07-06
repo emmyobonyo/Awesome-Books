@@ -47,9 +47,9 @@ form.addEventListener('submit', function (e) {
   li.appendChild(author);
   li.appendChild(removeBtn);
   bookList.appendChild(li);
+  localStorage.setItem('book', JSON.stringify(books));
   titleInput.value = '';
   authorInput.value = '';
-  localStorage.setItem('book', JSON.stringify(books));
   removeBtn.addEventListener('click', function () {
     bookList.removeChild(li);
     localStorage.removeItem('book');
