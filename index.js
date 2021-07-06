@@ -4,6 +4,7 @@ const form = document.querySelector('.form');
 const titleInput = document.querySelector('.title-input');
 const authorInput = document.querySelector('.author-input');
 const addBtn = document.querySelector('.add-btn');
+
 let books = [];
 
 function Book(title, author) {
