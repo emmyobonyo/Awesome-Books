@@ -7,10 +7,12 @@ const addBtn = document.querySelector('.add-btn');
 const removeBtn = document.createElement('button');
 const li = document.createElement('li');
 
+let books = [];
+
 function Book(title, author) {
   this.title = title;
   this.author = author;
-  this.addBook = function() {
+  this.addBook = function () {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       const title = document.createElement('p');
@@ -22,6 +24,7 @@ function Book(title, author) {
       li.appendChild(author);
       li.appendChild(removeBtn);
       bookList.appendChild(li);
+      localStorage.setItem('book', JSON.stringify(books));
       titleInput.value = '';
       authorInput.value = '';
     });
@@ -31,14 +34,12 @@ function Book(title, author) {
       bookList.removeChild(li);
       localStorage.removeItem('book');
     });
-  }
+  };
 }
 textBook = new Book(titleInput, authorInput);
 textBook.addBook();
 textBook.removeBook();
 
-
-// let books = [];
 // let localList = JSON.parse(localStorage.getItem('book'));
 
 // if (localStorage.length > 0) {
