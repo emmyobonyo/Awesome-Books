@@ -1,8 +1,5 @@
-// Varibles
-$primary-font: Helvetica;
-
 body {
-  font-family: $primary-font;
+  font-family: Helvetica;
   width: 80%;
   margin: auto;
 }
@@ -43,3 +40,5 @@ input {
   font-weight: bolder;
   color: black;
 }
+
+/*# sourceMappingURL=style.css.map */
