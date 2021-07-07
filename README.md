@@ -4,7 +4,7 @@
 
 > A Simple Program Designed to Orgamise all our Literature.
 
-![screenshot](./awesome-books.png)
+![screenshot](./2.png)
 
 - A User can Add a book using a form.
 - Get tired of a book, you can as well remove all togsther from the list.
