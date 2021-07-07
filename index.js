@@ -19,7 +19,7 @@ class book {
     const div = document.createElement('div');
     removeBtn.innerHTML = 'remove';
     title.innerHTML = titleName + ' by ';
-    author.innerHTML = authorName;
+    author.innerHTML = ', ' + authorName;
     list.appendChild(div)
     div.appendChild(title);
     div.appendChild(author);
