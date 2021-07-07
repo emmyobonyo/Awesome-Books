@@ -3,7 +3,6 @@ $primary-font: Helvetica;
 
 body {
   font-family: $primary-font;
-  width: 80%;
   margin: auto;
 }
 
@@ -46,6 +45,8 @@ input {
 
 p {
   display: inline;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace
 }
 
 ::placeholder {
@@ -60,4 +61,13 @@ ul {
 li {
   display: flex;
   justify-content: space-between;
+}
+
+.div-color {
+  background-color: gray;
+  border: 2px solid black;
+}
+
+.div-flex {
+  align-self: center;
 }

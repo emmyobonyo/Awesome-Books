@@ -17,8 +17,9 @@ class book {
     const author = document.createElement('p');
     const removeBtn = document.createElement('button');
     const div = document.createElement('div');
+    div.className = 'div-flex'
     removeBtn.innerHTML = 'remove';
-    title.innerHTML = titleName + ' by ';
+    title.innerHTML = titleName + ' by';
     author.innerHTML = ', ' + authorName;
     list.appendChild(div)
     div.appendChild(title);

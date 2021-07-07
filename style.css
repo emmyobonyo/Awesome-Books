@@ -1,6 +1,5 @@
 body {
   font-family: Helvetica;
-  width: 80%;
   margin: auto;
 }
 
@@ -42,7 +41,9 @@ input {
 }
 
 p {
-  display: inline-block;
+  display: inline;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
 }
 
 ::placeholder {
@@ -57,6 +58,15 @@ ul {
 li {
   display: flex;
   justify-content: space-between;
+}
+
+.div-color {
+  background-color: gray;
+  border: 2px solid black;
+}
+
+.div-flex {
+  align-self: center;
 }
 
 /*# sourceMappingURL=style.css.map */
