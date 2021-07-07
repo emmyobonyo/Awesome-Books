@@ -41,6 +41,10 @@ input {
   color: black;
 }
 
+p {
+  display: inline-block;
+}
+
 ::placeholder {
   font-weight: bolder;
   color: black;

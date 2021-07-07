@@ -16,11 +16,13 @@ class book {
     const title = document.createElement('p');
     const author = document.createElement('p');
     const removeBtn = document.createElement('button');
+    const div = document.createElement('div');
     removeBtn.innerHTML = 'remove';
-    title.innerHTML = titleName;
+    title.innerHTML = titleName + ' by ';
     author.innerHTML = authorName;
-    list.appendChild(title);
-    list.appendChild(author);
+    list.appendChild(div)
+    div.appendChild(title);
+    div.appendChild(author);
     list.appendChild(removeBtn);
     bookList.appendChild(list);
     titleInput.value = '';
