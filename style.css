@@ -1,5 +1,5 @@
 body {
-  font-family: Helvetica;
+  font-family: helvetica;
   margin: auto;
 }
 
@@ -43,7 +43,7 @@ input {
 p {
   display: inline;
   font-weight: bold;
-  font-family: "Courier New", Courier, monospacec;
+  font-family: "Courier New", Courier, monospace;
 }
 
 ::placeholder {
