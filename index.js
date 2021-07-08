@@ -35,7 +35,7 @@ document.getElementById(
   'date'
 ).innerHTML = `${days[day]} ${dates}th ${months[month]} ${year}`;
 
-const books = [];
+const books = JSON.parse(localStorage.getItem('book')) || [];
 
 class Book {
   constructor(title, author) {
@@ -75,10 +75,10 @@ form.addEventListener('submit', (e) => {
   titleInput.value = '';
   authorInput.value = '';
 });
-const localList = JSON.parse(localStorage.getItem('book'));
+// const localList = JSON.parse(localStorage.getItem('book'));
 
 if (localStorage.length > 0) {
-  localList.forEach((book) => {
+  books.forEach((book) => {
     const list = document.createElement('li');
     const title = document.createElement('p');
     const author = document.createElement('p');
@@ -95,7 +95,9 @@ if (localStorage.length > 0) {
     bookList.appendChild(list);
     removeBtn.addEventListener('click', () => {
       bookList.removeChild(list);
-      localStorage.removeItem('book');
+      books.splice(books.indexOf(book), 1);
+      localStorage.setItem('book', JSON.stringify(books));
+      // localStorage.removeItem('book');
     });
   });
 }
