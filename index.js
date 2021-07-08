@@ -20,7 +20,7 @@ class Book {
     div.className = 'div-flex';
     removeBtn.innerHTML = 'remove';
     title.innerHTML = titleName;
-    author.innerHTML = ` by  + ${authorName}`;
+    author.innerHTML = ` by  ${authorName}`;
     div.appendChild(title);
     div.appendChild(author);
     list.appendChild(div);
@@ -56,7 +56,7 @@ if (localStorage.length > 0) {
     div.className = 'div-flex';
     removeBtn.innerHTML = 'remove';
     title.innerHTML = book.title;
-    author.innerHTML = ` by  + ${author}`;
+    author.innerHTML = ` by  ${author}`;
     div.appendChild(title);
     div.appendChild(author);
     list.appendChild(div);
@@ -68,20 +68,20 @@ if (localStorage.length > 0) {
     });
   });
 }
-const listItemsNone = () => {
+function listItemsNone() {
   document.getElementById('list-items').style.display = 'block';
   document.getElementById('forms').style.display = 'none';
   document.getElementById('contact-info').style.display = 'none';
-};
+}
 
-const addNewNone = () => {
+function addNewNone() {
   document.getElementById('list-items').style.display = 'none';
   document.getElementById('forms').style.display = 'block';
   document.getElementById('contact-info').style.display = 'none';
-};
+}
 
-const contactNone = () => {
+function contactNone() {
   document.getElementById('list-items').style.display = 'none';
   document.getElementById('forms').style.display = 'none';
   document.getElementById('contact-info').style.display = 'block';
-};
+}
