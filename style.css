@@ -21,6 +21,7 @@ form {
   flex-direction: column;
   width: 60%;
   margin: auto;
+  display: none;
 }
 
 button {
@@ -109,12 +110,31 @@ li {
   cursor: pointer;
 }
 
-.display-non {
+.none-add-new {
   display: none;
 }
 
-.display-block {
-  display: block;
+.contact-info {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  border: 3px solid black;
+  padding-bottom: 5px;
+  display: none;
 }
+
+.contact-list {
+  border-bottom: none !important;
+}
+
+.copyrite {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  border: 3px solid black;
+  margin-top: 10px;
+}
+
 
 /*# sourceMappingURL=style.css.map */

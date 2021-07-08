@@ -18,19 +18,19 @@
     <nav class="nav-header">
       <h1>All awesome books</h1>
       <ul>
-        <li class="nav-header-list list">List</li>
-        <li class="nav-header-list add-new">Add new</li>
-        <li class="nav-header-list contact">Contact</li>
+        <li class="nav-header-list list"><a href="#" onclick="return listItemsNone()">List</a></li>
+        <li class="nav-header-list add-new"><a href="#" onclick="return addNewNone()">Add new</a></li>
+        <li class="nav-header-list contact"><a href="#" onclick="return contactNone()">Contact</a></li>
       </ul>
     </nav>
     <div>
       <h5 id="title-author"></h5>
     </div>
-    <div class="div-color">
+    <div class="div-color" id="list-items">
       <ul class="book-list"></ul>
     </div>
     <hr />
-    <form class="form">
+    <form class="form" id="forms">
       <h4>Add a new book</h4>
       <fieldset>
         <input
@@ -48,6 +48,18 @@
       </fieldset>
       <button class="add-btn" type="submit">Add</button>
     </form>
+    <div class="contact-info" id="contact-info">
+      <h3>Contact Information</h3>
+      <p>Do you have any information to tell us</p>
+      <ul class="contact-ul">
+        <li class="contact-list">Our email: awesomebooks@awesomebooks.com</li>
+        <li class="contact-list">Our phone: +100 890087323</li>
+        <li class="contact-list">Our instagram: @awesomebooks </li>
+      </ul>
+    </div>
+    <div class="copyrite">
+      <p>&copy; Copyrite 2021 Emmanuel & Yahya</p>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script
       src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"

@@ -70,13 +70,20 @@ if (localStorage.length > 0) {
     });
   });
 }
+function listItemsNone() {
+  document.getElementById('list-items').style.display = "block";
+  document.getElementById('forms').style.display = "none";
+  document.getElementById('contact-info').style.display = "none";
+}
 
-list.addEventListener('click', () => {
-  form.classList.add('display-non');
-  bookList.classList.toggle('display-block');
-});
+function addNewNone() {
+  document.getElementById('list-items').style.display = "none";
+  document.getElementById('forms').style.display = "block";
+  document.getElementById('contact-info').style.display = "none";
+}
 
-addNew.addEventListener('click', () => {
-  bookList.classList.add('display-non');
-  form.classList.toggle('display-block');
-});
+function contactNone() {
+  document.getElementById('list-items').style.display = "none";
+  document.getElementById('forms').style.display = "none";
+  document.getElementById('contact-info').style.display = "block";
+}
