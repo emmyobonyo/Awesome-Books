@@ -3,8 +3,6 @@ const form = document.querySelector('.form');
 const titleInput = document.querySelector('.title-input');
 const authorInput = document.querySelector('.author-input');
 
-const addNew = document.querySelector('.add-new');
-
 const books = [];
 
 class book {
@@ -22,7 +20,7 @@ class book {
     div.className = 'div-flex';
     removeBtn.innerHTML = 'remove';
     title.innerHTML = titleName;
-    author.innerHTML = ' by ' + authorName;
+    author.innerHTML = ` by  + ${authorName}`;
     div.appendChild(title);
     div.appendChild(author);
     list.appendChild(div);
@@ -38,15 +36,15 @@ class book {
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  const theBook = new book(titleInput.value, authorInput.value);
+  const TheBook = new book(titleInput.value, authorInput.value);
   books.push(theBook);
-  theBook.listItem(theBook.title, theBook.author);
+  TheBook.listItem(theBook.title, theBook.author);
 
   localStorage.setItem('book', JSON.stringify(books));
   titleInput.value = '';
   authorInput.value = '';
 });
-let localList = JSON.parse(localStorage.getItem('book'));
+const localList = JSON.parse(localStorage.getItem('book'));
 
 if (localStorage.length > 0) {
   localList.forEach((book) => {
@@ -58,7 +56,7 @@ if (localStorage.length > 0) {
     div.className = 'div-flex';
     removeBtn.innerHTML = 'remove';
     title.innerHTML = book.title;
-    author.innerHTML = ' by ' + book.author;
+    author.innerHTML = ` by  + ${authorName}`;
     div.appendChild(title);
     div.appendChild(author);
     list.appendChild(div);
@@ -70,7 +68,7 @@ if (localStorage.length > 0) {
     });
   });
 }
-listItemsNone = () => {
+const listItemsNone = () => {
   document.getElementById('list-items').style.display = 'block';
   document.getElementById('forms').style.display = 'none';
   document.getElementById('contact-info').style.display = 'none';
