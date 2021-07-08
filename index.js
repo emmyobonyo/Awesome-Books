@@ -8,8 +8,8 @@ const dates = date.getDate();
 const month = date.getMonth();
 const year = date.getFullYear();
 
-var days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
-var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 document.getElementById('date').innerHTML = `${days[day]} ${dates}th ${months[month]} ${year}`;
 
 const books = [];
