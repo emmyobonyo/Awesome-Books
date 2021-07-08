@@ -85,3 +85,7 @@ function contactNone() {
   document.getElementById('forms').style.display = 'none';
   document.getElementById('contact-info').style.display = 'block';
 }
+
+listItemsNone();
+addNewNone();
+contactNone();
