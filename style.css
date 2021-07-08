@@ -75,4 +75,13 @@ li {
   padding-left: 9em;
 }
 
+.div-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.div-flex p {
+  margin-left: 0.3em;
+}
+
 /*# sourceMappingURL=style.css.map */
