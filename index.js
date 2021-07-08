@@ -11,7 +11,7 @@ class Book {
     this.author = author;
   }
 
-  listItem(titleName, authorName) {
+  listItem() {
     const list = document.createElement('li');
     const title = document.createElement('p');
     const author = document.createElement('p');
@@ -19,8 +19,8 @@ class Book {
     const div = document.createElement('div');
     div.className = 'div-flex';
     removeBtn.innerHTML = 'remove';
-    title.innerHTML = titleName;
-    author.innerHTML = ` by  ${authorName}`;
+    title.innerHTML = this.title;
+    author.innerHTML = ` by  ${this.author}`;
     div.appendChild(title);
     div.appendChild(author);
     list.appendChild(div);
