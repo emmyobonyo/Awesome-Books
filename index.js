@@ -5,7 +5,7 @@ const authorInput = document.querySelector('.author-input');
 
 const books = [];
 
-class book {
+class Book {
   constructor(title, author) {
     this.title = title;
     this.author = author;
@@ -36,7 +36,7 @@ class book {
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  const TheBook = new book(titleInput.value, authorInput.value);
+  const TheBook = new Book(titleInput.value, authorInput.value);
   books.push(TheBook);
   TheBook.listItem(TheBook.title, TheBook.author);
 
@@ -62,7 +62,7 @@ if (localStorage.length > 0) {
     list.appendChild(div);
     list.appendChild(removeBtn);
     bookList.appendChild(list);
-    removeBtn.addEventListener('click', function () {
+    removeBtn.addEventListener('click', () => {
       bookList.removeChild(list);
       localStorage.removeItem('book');
     });
