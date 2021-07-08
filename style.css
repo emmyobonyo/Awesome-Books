@@ -27,6 +27,10 @@ form {
   display: none;
 }
 
+#date {
+  text-align: center;
+}
+
 button {
   align-self: flex-end;
   border: 2px solid black;
