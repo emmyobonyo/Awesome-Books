@@ -1,0 +1,119 @@
+body {
+  font-family: helvetica;
+  margin: auto;
+}
+
+h4 {
+  font-weight: bolder;
+  text-align: center;
+}
+
+hr {
+  width: 30%;
+  border: 3px solid black;
+  border-radius: 3px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+}
+
+button {
+  align-self: flex-end;
+  border: 2px solid black;
+  width: 30%;
+  background-color: white;
+  box-shadow: 5px 5px black;
+}
+
+input {
+  border: 4px solid black;
+  margin-bottom: 5px;
+  width: 100%;
+  padding: 5px;
+  font-weight: bolder;
+  color: black;
+}
+
+p {
+  display: inline;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+::placeholder {
+  font-weight: bolder;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px solid black;
+  padding-left: 10px;
+}
+
+.div-color {
+  background-color: gray;
+  border: 2px solid black;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.title {
+  padding-left: 9em;
+}
+
+.div-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.div-flex p {
+  margin-left: 0.3em;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em;
+  margin: 0.5em;
+  border: 5px solid black;
+}
+.nav-header h1 {
+  display: inline;
+  font-size: 1.6em;
+  margin: 0;
+}
+
+.nav-header ul {
+  display: flex;
+  align-items: center;
+}
+
+.nav-header-list {
+  display: inline;
+  border-bottom: none !important;
+  font-size: 1.3em;
+}
+
+.display-non {
+  display: none;
+}
+
+.display-block {
+  display: block;
+}
+
+/*# sourceMappingURL=style.css.map */
