@@ -37,8 +37,8 @@ class book {
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   const TheBook = new book(titleInput.value, authorInput.value);
-  books.push(theBook);
-  TheBook.listItem(theBook.title, theBook.author);
+  books.push(TheBook);
+  TheBook.listItem(TheBook.title, TheBook.author);
 
   localStorage.setItem('book', JSON.stringify(books));
   titleInput.value = '';
@@ -56,7 +56,7 @@ if (localStorage.length > 0) {
     div.className = 'div-flex';
     removeBtn.innerHTML = 'remove';
     title.innerHTML = book.title;
-    author.innerHTML = ` by  + ${authorName}`;
+    author.innerHTML = ` by  + ${author}`;
     div.appendChild(title);
     div.appendChild(author);
     list.appendChild(div);
@@ -74,13 +74,13 @@ const listItemsNone = () => {
   document.getElementById('contact-info').style.display = 'none';
 };
 
-addNewNone = () => {
+const addNewNone = () => {
   document.getElementById('list-items').style.display = 'none';
   document.getElementById('forms').style.display = 'block';
   document.getElementById('contact-info').style.display = 'none';
 };
 
-contactNone = () => {
+const contactNone = () => {
   document.getElementById('list-items').style.display = 'none';
   document.getElementById('forms').style.display = 'none';
   document.getElementById('contact-info').style.display = 'block';
