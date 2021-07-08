@@ -21,9 +21,9 @@ class book {
     removeBtn.innerHTML = 'remove';
     title.innerHTML = titleName;
     author.innerHTML = authorName;
-    list.appendChild(div);
     div.appendChild(title);
     div.appendChild(author);
+    list.appendChild(div);
     list.appendChild(removeBtn);
     bookList.appendChild(list);
     titleInput.value = '';
@@ -52,11 +52,14 @@ if (localStorage.length > 0) {
     const title = document.createElement('p');
     const author = document.createElement('p');
     const removeBtn = document.createElement('button');
+    const div = document.createElement('div');
+    div.className = 'div-flex';
     removeBtn.innerHTML = 'remove';
     title.innerHTML = book.title;
     author.innerHTML = book.author;
-    list.appendChild(title);
-    list.appendChild(author);
+    div.appendChild(title);
+    div.appendChild(author);
+    list.appendChild(div);
     list.appendChild(removeBtn);
     bookList.appendChild(list);
     removeBtn.addEventListener('click', function () {
