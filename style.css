@@ -64,10 +64,6 @@ li {
   padding-left: 10px;
 }
 
-li p {
-  padding: 3.5em;
-}
-
 .div-color {
   background-color: gray;
   border: 2px solid black;
@@ -76,7 +72,7 @@ li p {
 }
 
 .title {
-  padding: 4em;
+  padding-left: 9em;
 }
 
 /*# sourceMappingURL=style.css.map */
