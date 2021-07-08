@@ -8,9 +8,32 @@ const dates = date.getDate();
 const month = date.getMonth();
 const year = date.getFullYear();
 
-const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-document.getElementById('date').innerHTML = `${days[day]} ${dates}th ${months[month]} ${year}`;
+const days = [
+  'Monday',
+  'Tuesday',
+  'Wednesday',
+  'Thursday',
+  'Friday',
+  'Saturday',
+  'Sunday',
+];
+const months = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'December',
+];
+document.getElementById(
+  'date'
+).innerHTML = `${days[day]} ${dates}th ${months[month]} ${year}`;
 
 const books = [];
 
@@ -48,7 +71,6 @@ form.addEventListener('submit', (e) => {
   const TheBook = new Book(titleInput.value, authorInput.value);
   books.push(TheBook);
   TheBook.listItem(TheBook.title, TheBook.author);
-
   localStorage.setItem('book', JSON.stringify(books));
   titleInput.value = '';
   authorInput.value = '';
