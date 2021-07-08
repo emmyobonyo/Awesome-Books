@@ -32,7 +32,7 @@ const months = [
   'December',
 ];
 document.getElementById(
-  'date'
+  'date',
 ).innerHTML = `${days[day]} ${dates}th ${months[month]} ${year}`;
 
 const books = JSON.parse(localStorage.getItem('book')) || [];
@@ -75,7 +75,6 @@ form.addEventListener('submit', (e) => {
   titleInput.value = '';
   authorInput.value = '';
 });
-// const localList = JSON.parse(localStorage.getItem('book'));
 
 if (localStorage.length > 0) {
   books.forEach((book) => {
@@ -97,7 +96,6 @@ if (localStorage.length > 0) {
       bookList.removeChild(list);
       books.splice(books.indexOf(book), 1);
       localStorage.setItem('book', JSON.stringify(books));
-      // localStorage.removeItem('book');
     });
   });
 }
