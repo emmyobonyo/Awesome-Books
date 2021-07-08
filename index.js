@@ -2,17 +2,17 @@ const bookList = document.querySelector('.book-list');
 const form = document.querySelector('.form');
 const titleInput = document.querySelector('.title-input');
 const authorInput = document.querySelector('.author-input');
-const addBtn = document.querySelector('.add-btn');
-const list = document.querySelector('.list');
+
 const addNew = document.querySelector('.add-new');
 
-let books = [];
+const books = [];
 
 class book {
   constructor(title, author) {
     this.title = title;
     this.author = author;
   }
+
   listItem(titleName, authorName) {
     const list = document.createElement('li');
     const title = document.createElement('p');
@@ -30,13 +30,13 @@ class book {
     bookList.appendChild(list);
     titleInput.value = '';
     authorInput.value = '';
-    removeBtn.addEventListener('click', function () {
+    removeBtn.addEventListener('click', () => {
       bookList.removeChild(list);
     });
   }
 }
 
-form.addEventListener('submit', function (e) {
+form.addEventListener('submit', (e) => {
   e.preventDefault();
   const theBook = new book(titleInput.value, authorInput.value);
   books.push(theBook);
@@ -70,20 +70,20 @@ if (localStorage.length > 0) {
     });
   });
 }
-function listItemsNone() {
-  document.getElementById('list-items').style.display = "block";
-  document.getElementById('forms').style.display = "none";
-  document.getElementById('contact-info').style.display = "none";
-}
+listItemsNone = () => {
+  document.getElementById('list-items').style.display = 'block';
+  document.getElementById('forms').style.display = 'none';
+  document.getElementById('contact-info').style.display = 'none';
+};
 
-function addNewNone() {
-  document.getElementById('list-items').style.display = "none";
-  document.getElementById('forms').style.display = "block";
-  document.getElementById('contact-info').style.display = "none";
-}
+addNewNone = () => {
+  document.getElementById('list-items').style.display = 'none';
+  document.getElementById('forms').style.display = 'block';
+  document.getElementById('contact-info').style.display = 'none';
+};
 
-function contactNone() {
-  document.getElementById('list-items').style.display = "none";
-  document.getElementById('forms').style.display = "none";
-  document.getElementById('contact-info').style.display = "block";
-}
+contactNone = () => {
+  document.getElementById('list-items').style.display = 'none';
+  document.getElementById('forms').style.display = 'none';
+  document.getElementById('contact-info').style.display = 'block';
+};
