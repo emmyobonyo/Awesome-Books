@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Awesome Books</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav class="nav-header">
+      <h1>
+        <a href="#" onclick="return listItemsNone()"> All awesome books</a>
+      </h1>
+      <ul>
+        <li class="nav-header-list list">
+          <a href="#" onclick="return listItemsNone()">List</a>
+        </li>
+        <li class="nav-header-list add-new">
+          <a href="#" onclick="return addNewNone()">Add new</a>
+        </li>
+        <li class="nav-header-list contact">
+          <a href="#" onclick="return contactNone()">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <p id="date"></p>
+    <div>
+      <h5 id="title-author"></h5>
+    </div>
+    <div class="" id="list-items">
+      <h4>Lists of Books</h4>
+      <ul class="book-list div-color"></ul>
+    </div>
+    <hr />
+    <form class="form" id="forms">
+      <h4>Add a new book</h4>
+      <fieldset>
+        <input
+          class="title-input"
+          type="text"
+          placeholder="Title"
+          required
+        /><br />
+        <input
+          class="author-input"
+          type="text"
+          placeholder="Author"
+          required
+        /><br />
+      </fieldset>
+      <button class="add-btn" type="submit">Add</button>
+    </form>
+    <div class="contact-info" id="contact-info">
+      <h3>Contact Information</h3>
+      <p>Do you have any information to tell us</p>
+      <ul class="contact-ul">
+        <li class="contact-list">Our email: awesomebooks@awesomebooks.com</li>
+        <li class="contact-list">Our phone: +100 890087323</li>
+        <li class="contact-list">Our instagram: @awesomebooks</li>
+      </ul>
+    </div>
+    <div class="copyrite">
+      <p>&copy; Copyrite 2021 Emmanuel & Yahya</p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
