@@ -37,15 +37,15 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Yahya EL Ganayni**
 
-- GitHub: [@githubhandle](https://github.com/yahyaelganyni1 )
-- Twitter: [@twitterhandle](https://twitter.com/@crazy20046)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/yahya-el-ganayni-a456115b/)
+- GitHub: [@yahyaelganyni1](https://github.com/yahyaelganyni1 )
+- Twitter: [@crazy20046](https://twitter.com/@crazy20046)
+- LinkedIn: [Linked](https://www.linkedin.com/in/yahya-el-ganayni-a456115b/)
 
-👤 **Author2**
+👤 **Emmanuel Obonyo**
 
-- GitHub: [@githubhandle](https://github.com/emmyobonyo)
-- Twitter: [@twitterhandle](https://twitter.com/emmyobonyo)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/emmanuel-obonyo-3728a2200/)
+- GitHub: [@emmyobonyo](https://github.com/emmyobonyo)
+- Twitter: [@emmyobonyo](https://twitter.com/emmyobonyo)
+- LinkedIn: [Emmanuel Obonyo](https://www.linkedin.com/in/emmanuel-obonyo-3728a2200/)
 
 ## 🤝 Contributing
 
