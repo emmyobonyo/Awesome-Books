@@ -39,7 +39,7 @@ To get a local copy up and running follow these simple example steps.
 
 - GitHub: [@yahyaelganyni1](https://github.com/yahyaelganyni1 )
 - Twitter: [@crazy20046](https://twitter.com/@crazy20046)
-- LinkedIn: [Linked](https://www.linkedin.com/in/yahya-el-ganayni-a456115b/)
+- LinkedIn: [Yahya EL-ganayni](https://www.linkedin.com/in/yahya-el-ganayni-a456115b/)
 
 👤 **Emmanuel Obonyo**
 
